@@ -1,14 +1,3 @@
-
-
-"""
-    This program listens for work messages contiously. 
-    Start multiple versions to add more workers.  
-
-    Author: Denise Case
-    Date: January 15, 2023
-
-"""
-
 import pika
 import sys
 import time
@@ -99,4 +88,3 @@ def main(hn: str = "localhost", qn: str = "task_queue"):
 if __name__ == "__main__":
     # call the main function with the information needed
     main("localhost", "task_queue2")
-
